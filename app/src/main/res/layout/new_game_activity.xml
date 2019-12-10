@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF8030"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/FaceFour"
+        android:layout_width="160dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/nordick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record" />
+
+    <ImageButton
+        android:id="@+id/FaceThree"
+        android:layout_width="143dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/geoff_copy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/FaceFour"
+        app:layout_constraintTop_toBottomOf="@+id/play" />
+
+    <RadioGroup
+        android:id="@+id/PitchOptions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#2CBFEFFD"
+        android:checkedButton="@id/NormalPitch"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durationSeconds2">
+
+        <RadioButton
+            android:id="@+id/LowPitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Low Pitch" />
+
+        <RadioButton
+            android:id="@+id/NormalPitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal Pitch" />
+
+        <RadioButton
+            android:id="@+id/HighPitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="High Pitch" />
+
+        <RadioButton
+            android:id="@+id/chipmunk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chipmunk" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/durationSeconds2"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#2CBFEFFD"
+        android:ems="10"
+        android:hint="Recording Duration (seconds)"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:text="5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FaceFour" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="play"
+        app:layout_constraintStart_toEndOf="@+id/record"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="10dp"
+        android:text="record"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="217dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/geoff_copy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
